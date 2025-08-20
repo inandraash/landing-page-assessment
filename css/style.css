@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    background-color: #fdfdff;
+    color: #4a5568;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.background-blob {
+    position: absolute;
+    top: -250px;
+    left: -400px;
+    width: 1000px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+/* --- HERO SECTION & FOOTER--- */
+.hero-section, .footer-cta {
+    position: relative;
+    color: #ffffff;
+    padding: 120px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #004182, #0A66C2, #0073b1);
+    background-size: 200% 200%; /* Penting untuk animasi */
+    animation: animatedGradient 15s ease infinite; /* Terapkan animasi */
+}
+
+.footer-cta {
+    padding: 80px 0;
+}
+
+@keyframes animatedGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-section .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- TOMBOL CTA --- */
+.cta-button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #0A66C2;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- SECTION STYLING --- */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 3rem;
+}
+
+/* --- ABOUT SECTION --- */
+.about-section p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- BENEFITS SECTION --- */
+.benefits-section {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.benefit-card {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(10, 102, 194, 0.05);
+    text-align: left;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(10, 102, 194, 0.1);
+}
+
+.benefit-card h3 {
+    margin-bottom: 0.5rem;
+    color: #0A66C2;
+}
+
+.benefit-icon {
+    stroke: #0A66C2;
+    margin-bottom: 1rem;
+}
+
+/* --- TESTIMONIALS SECTION --- */
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(10, 102, 194, 0.05);
+    border-left: 5px solid #0A66C2;
+    text-align: left;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card cite {
+    font-weight: 600;
+    font-style: normal;
+    color: #1a202c;
+}
+
+/* --- FOOTER CTA SECTION --- */
+.footer-cta h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-cta p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* --- ANIMATION ON SCROLL --- */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* DESKTOP & TABLET --- */
+@media (min-width: 768px) {
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
