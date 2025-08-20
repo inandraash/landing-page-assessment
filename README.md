@@ -14,11 +14,11 @@ Ini adalah landing page promosi untuk kelas online "Mastering LinkedIn for Caree
 
 **Desktop**
 
-![Screenshot Desktop](https://github.com/user-attachments/assets/44820de0-d993-4f03-aa96-f902eff03a9e)
+![Image](https://github.com/user-attachments/assets/44820de0-d993-4f03-aa96-f902eff03a9e)
 
 **Mobile**
 
-![Screenshot Mobile](https://github.com/user-attachments/assets/244d45e0-3644-4668-bbf0-5fc97efd448c)
+![Image](https://github.com/user-attachments/assets/244d45e0-3644-4668-bbf0-5fc97efd448c)
 
 ---
 
